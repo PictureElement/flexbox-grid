@@ -22,6 +22,8 @@ html, body {
 
 .row {
   display: flex;
+  /* default flex direction (mobile first design) */
+  flex-direction: column;
 }
 
 /* 1/12 of the page width */
@@ -81,4 +83,11 @@ html, body {
   text-align: center;
   padding: 0.5rem;
   margin: 0.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 }
