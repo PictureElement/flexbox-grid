@@ -1,10 +1,11 @@
-* {
+html {
   /*
    * The width/height property includes content, padding, and border. This makes
    * things more predictable. No matter how you tweak the padding and border
    * sizes, the size of the box will always stay the same.
    */
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 .row {
@@ -65,5 +66,6 @@
 .col-11, .col-12 {
   background-color: red;
   text-align: center;
+  padding: 0.25rem;
+  margin: 0.25rem;
 }
-
