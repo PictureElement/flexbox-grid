@@ -1,11 +1,6 @@
-/* Set borders to see where elements are on the screen */
-* {
-  border: 1px solid red !important;
-}
-
 * {
   /*
-   * The flex-basis/height property includes content, padding, and border. This makes
+   * The width/height property includes content, padding, and border. This makes
    * things more predictable. No matter how you tweak the padding and border
    * sizes, the size of the box will always stay the same.
    */
@@ -16,66 +11,59 @@
   display: flex;
 }
 
-/* 1/12 of the page flex-basis */
+/* 1/12 of the page width */
 .col-1 {
   flex-basis: 8.33%;
-  padding: 0.5rem;
 }
 
-/* 2/12 of the page flex-basis */
+/* 2/12 of the page width */
 .col-2 {
   flex-basis: 16.66%;
-  padding: 0.5rem;
 }
 
 .col-3 {
   flex-basis: 25%;
-  padding: 0.5rem;
 }
 
 .col-4 {
   flex-basis: 33.33%;
-  padding: 0.5rem;
 }
 
 .col-5 {
   flex-basis: 41.66%;
-  padding: 0.5rem;
 }
 
 .col-6 {
   flex-basis: 50%;
-  padding: 0.5rem;
 }
 
 .col-7 {
   flex-basis: 58.33%;
-  padding: 0.5rem;
 }
 
 .col-8 {
   flex-basis: 66.66%;
-  padding: 0.5rem;
 }
 
 .col-9 {
   flex-basis: 75%;
-  padding: 0.5rem;
 }
 
 .col-10 {
   flex-basis: 83.33%;
-  padding: 0.5rem;
 }
 
 .col-11 {
   flex-basis: 91.66%;
-  padding: 0.5rem;
 }
 
 .col-12 {
   flex-basis: 100%;
-  padding: 0.5rem;
 }
 
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10,
+.col-11, .col-12 {
+  background-color: red;
+  text-align: center;
+}
 
