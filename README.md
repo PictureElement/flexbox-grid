@@ -7,8 +7,8 @@ A responsive 12-column grid system using Flexbox. The system comes in 2 tiers:
 
 Examples:
 
- 1. c-3 is 3 of 12 columns wide (25%) for device widths greater than 575px.
- 2. c-m-3 is 3 of 12 columns wide (25%) for device widths greater than 767px.
+ - c-3 is 3 of 12 columns wide (25%) for device widths greater than 575px.
+ - c-m-3 is 3 of 12 columns wide (25%) for device widths greater than 767px.
 
 The page lives here: https://pictureelement.github.io/flexbox-grid/
 
