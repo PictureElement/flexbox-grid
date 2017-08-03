@@ -20,6 +20,11 @@ html, body {
   flex-direction: column; /* Mobile-first design */
 }
 
+.row-m {
+  display: flex;
+  flex-direction: column; /* Mobile-first design */
+}
+
 [class*="c-"] {
   width: 100%; /* Mobile-first design */
   border-radius: .3rem;
@@ -29,8 +34,13 @@ html, body {
   padding: 0.3rem;
 }
 
-/* For viewport widths greater than 425px */
-@media screen and (min-width: 425px) {
+[class*="c-m-"] {
+  background-color: green;
+}
+
+/* SMALL */
+/* c-3 is 3 of 12 columns wide (25%) on device width (>= 576 pixels) */
+@media screen and (min-width: 576px) {
   .row {
     flex-direction: row;
   }
@@ -46,4 +56,24 @@ html, body {
   .c-10 {width: 83.33%;}
   .c-11 {width: 91.66%;}
   .c-12 {width: 100%;} /* entire viewport width */
+}
+
+/* MEDIUM */
+/* c-m-3 is 3 of 12 columns wide (25%) on device width (>= 768 pixels) */
+@media screen and (min-width: 768px) {
+  .row-m {
+    flex-direction: row;
+  }
+  .c-m-1 {width: 8.33%;} /* 1/12 of viewport width */
+  .c-m-2 {width: 16.66%;}
+  .c-m-3 {width: 25%;} /* quarter viewport width */
+  .c-m-4 {width: 33.33%;}
+  .c-m-5 {width: 41.66%;}
+  .c-m-6 {width: 50%;} /* half viewport width */
+  .c-m-7 {width: 58.33%;}
+  .c-m-8 {width: 66.66%;}
+  .c-m-9 {width: 75%;}
+  .c-m-10 {width: 83.33%;}
+  .c-m-11 {width: 91.66%;}
+  .c-m-12 {width: 100%;} /* entire viewport width */
 }
