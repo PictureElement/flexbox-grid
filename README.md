@@ -1,3 +1,7 @@
+## Status
+
+Completed
+
 ## About
 
 A responsive 12-column grid system using Flexbox. The system comes in 2 tiers:
